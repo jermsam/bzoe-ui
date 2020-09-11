@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --white: #fff;
+    --grey: #f1f4f8b0;
+    --dark-grey: #6b7c93;
+    --green: #24b47e;
+    --teal: #4F96CE;
+    --blue: #6772e5;
+    --dark-blue: #4F3EF5;
+    --spacer: 28px;
+  }
+  
+  body {
+    font-family: -apple-system, system-ui, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: var(--dark-grey);
+    padding:0;
+  margin: 0;
+
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  }
+  
+  
+  
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+
+  .card {
+    width: 320px;
+   }
+ 
+   .card__content {
+       text-align: center;
+       position: relative;
+       padding: 5em;
+       transition:transform 2s;
+       background: white;
+       transform-style: preserve-3d;
+      
+   }
+ 
+   .card:hover .card__content{
+     transform:rotateY(.5turn);
+ }
+ 
+ 
+   .card__front,
+   .card__back {
+     position: absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+    
+    
+    
+   }
+   
+   .card__title{
+       
+       transform:translateZ(5rem);
+   }
+   
+   .card__body{
+    
+     transform:translateZ(2rem);
+ }
+ 
+   .card__back{
+       transform:rotateY(.5turn);
+   }
+
+   .blurBackground{
+    backdrop-filter: grayscale(0.5) opacity(0.8);
+   }
+
+  
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #C7C7C7;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #C7C7C7;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #C7C7C7;
+}
+
+textarea {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+
+.placeholder-fix:focus::-webkit-input-placeholder  {color:transparent;}
+.placeholder-fix:focus::-moz-placeholder   {color:transparent;}
+.placeholder-fix:-moz-placeholder   {color:transparent;}
+
+.themedButton{
+      background-color:#C2185B!important;
+    color:#fff !important 
+}
+.themedButton:hover{
+  background-color:#1565C0 !important;
+color:#fff !important
+}
+
+.themedButtonInverse{
+background-color:transparent!important;
+color:#fff !important ;
+border: white 1px solid !important;
+}
+.themedButtonInverse:hover{
+background-color:transparent !important;
+color:#fff !important;
+border: white 2px solid !important;
+font-size: 19px !important;
+}
+
+
+.secondaryButton{
+background-color: #fff !important;
+color: #C2185B !important;
+fill: #C2185B !important;
+box-shadow: inset 0 0 0 1px #C2185B !important;
+}
+.secondaryButton:hover{
+border-style: solid !important;
+border-width: 1px !important;
+}
+
+.dottedBox:hover{
+border-style:dotted !important;
+border-width:0.5px !important;
+border-color:#1565C0  !important;
+padding:0 !important;
+}
+.player-wrapper {
+position: relative;
+padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.seeMore{
+font-weight: 400 !important;
+  line-height: 1.44444444 !important;
+  letter-spacing: normal !important;
+  font-size: 1.125rem !important;
+  display: inline-block !important;
+  max-width: 10.5rem;
+}
+
+.seeMore:hover{
+font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif !important;
+  
+  margin-bottom: 0 !important;
+  border-bottom: 1px solid #1264a3 !important;
+  position: relative !important;
+}
